@@ -192,7 +192,7 @@ body {
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("../img/portfolio/rainBow.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -246,18 +246,22 @@ header.masthead .intro-text .intro-heading {
     text-transform: none;
 }
 
-#portfolio .portfolio-item {
+.specialistImg{
+   vertical-align: none;
+}
+
+#portfolio .Protfolios .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
-#portfolio .portfolio-item .portfolio-link {
+#portfolio .Protfolios .portfolio-item .portfolio-link {
     position: relative;
     display: block;
     max-width: 400px;
     margin: 0 auto;
     cursor: pointer;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#portfolio .Protfolios .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -267,10 +271,10 @@ header.masthead .intro-text .intro-heading {
     opacity: 0;
     background: rgba(254, 209, 54, 0.9);
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#portfolio .Protfolios .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#portfolio .Protfolios .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -280,25 +284,25 @@ header.masthead .intro-text .intro-heading {
     text-align: center;
     color: white;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#portfolio .Protfolios .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
     margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#portfolio .Protfolios .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .Protfolios .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
     margin: 0;
 }
-#portfolio .portfolio-item .portfolio-caption {
+#portfolio .Protfolios .portfolio-item .portfolio-caption {
     max-width: 400px;
     margin: 0 auto;
     padding: 25px;
     text-align: center;
     background-color: white;
 }
-#portfolio .portfolio-item .portfolio-caption h4 {
+#portfolio .Protfolios .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
 }
-#portfolio .portfolio-item .portfolio-caption p {
+#portfolio .Protfolios .portfolio-item .portfolio-caption p {
     font-size: 16px;
     font-style: italic;
     margin: 0;
@@ -768,4 +772,15 @@ fieldset[disabled] .btn-xl:hover {
 .container {
     padding-right: 0;
     padding-left: 0;
+}
+
+.fitted{
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.Protfolios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
