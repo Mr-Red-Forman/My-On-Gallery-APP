@@ -1,20 +1,27 @@
-console.log('Starting up');
+'use strict'
 
 
-// function openCanvas(){
-//     $(".page-top").click(function(e) {
-//         e.preventDefault(e)
-//         $('html,body').animate({scrollTop: $(".contacMe").offset().top},'slow');
-// })
-// }
 
-function slideToContact(){
-    $('html,body').animate({scrollTop: $(".contacMe").offset().top},'slow')
+function renderProtfolio() {
+    var strHTMLs=''
+    `<div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+            <h4>Threads</h4>
+            <p class="text-muted">Illustration</p>
+        </div>
+    </div>`
+
+}
+
+function slideToContact() {
+    $('html,body').animate({ scrollTop: $(".contacMe").offset().top }, 'slow')
     openCanvas()
 }
-// $("#contact h4").click(function(e) {
-//     e.preventDefault()
-//     $('html,body').animate({scrollTop: $(".contacMe").offset().top},'slow')
-//     openCanvas()
-
-// })
