@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Coding Academy</title>
+  <title>My life protfolio</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,15 +26,17 @@
 </head>
 
 <body id="page-top">
-  <div class="offcanvas-btn" onClick="openCanvas()">
+  <!-- contact button -->
+  <!-- <div class="offcanvas-btn" onClick="openCanvas()"> -->
+  <div class="offcanvas-btn" onClick="slideToContact()" title="Contact me">
     <i class="fa fa-comment" aria-hidden="true"></i>
   </div>
-  <aside class="offcanvas-aside">
+  <!-- <aside class="offcanvas-aside"> -->
 
   <!-- Contact -->
-  <section id="contact">
+  <!-- <section id="contact">
     <h4>Contact Me</h4>
-  </section>
+  </section> -->
     
   </aside>
 
@@ -221,22 +223,22 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-            <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
+            <img class="mx-auto rounded-circle" src="img/team/me.jpeg" alt="">
+            <h4>Yarden Zeron</h4>
+            <p class="text-muted">MS.c Agriculter & nice person</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://twitter.com/YardenZeron">
                     <i class="fa fa-twitter"></i>
                   </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=ahC3H1CiUJU">
                     <i class="fa fa-facebook"></i>
                   </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="linkedin.com/in/yarden-zeron-678247185">
                     <i class="fa fa-linkedin"></i>
                   </a>
               </li>
@@ -251,7 +253,103 @@
       </div>
   </section>
 
+  <!-- Contact Me -->
+<section class="contacMe">
+  <div class="px-5 container col-9 ">
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? 
+        Please do not hesitate to contact me directly.
+        I'll try to reach to back as I can.</p>
 
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Tel Aviv, 6382154, Israel</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p><a href="tel:+972544630558" style="color: black">+ 972-544-630558</a></p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p><a href ="mailto: zeron.yarden@gmail.com" style="color: black">zeron.yarden@gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+  </div>
+</section>
+<!--Section: Contact v.2-->
   <!-- Footer -->
   <footer>
     <div class="container">
